@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* variaveis*/
+
+:root {
+    --padding-top: 4rem;
+    --color-main: #0000FF;
+    --transition: all 0.25s ease;
+}
+
+/* contador*/
+
+#contador,
+#hero-contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.containerContador {
+    background-color: #fff;
+    ;
+}
+
+
+
+/* #contador {
+    border: 1px solid #000;
+} */
+
+#hero-contador {
+    padding-top: var(--padding-top);
+    margin-top: 20px;
+}
+
+.hero-contador__icon {
+    width: 100px;
+    padding: 17px 10px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    background-color: #154dbc29;
+
+    .fa-hashtag {
+        font-size: 1.6em;
+        color: var(--color-main);
+
+    }
+
+}
+
+.hero-contador__text p {
+    letter-spacing: 2px;
+
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+#boxNums {
+    border: 1px solid #ddd;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dddddd41;
+}
+
+#number {
+    font-size: 4em;
+
+}
+
+.textNumber {
+    font-size: 1.5em;
+}
+
+#boxActions {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+.action_item {
+    font-size: 3em;
+    /* border: 1px solid #000; */
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.diminuir {
+    background-color: #A52A2A;
+
+    &:hover {
+        background-color: #a52a2a9d;
+        transform: scale(1.1);
+    }
+}
+
+.resetar {
+    background-color: var(--color-main);
+
+    &:hover {
+        background-color: #0000ff92;
+        transform: scale(1.1);
+    }
+}
+
+.aumentar {
+    background-color: #4EEE94;
+
+    &:hover {
+        background-color: #4eee9379;
+        transform: scale(1.1);
+    }
+}
+
+#contadorFooter {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #37353549;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #154dbc29;
+
+    i {
+        color: var(--color-main);
+    }
+}
+
+#contadorFooter p {
+    font-size: 1.8em;
+}
